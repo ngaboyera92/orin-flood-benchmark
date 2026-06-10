@@ -35,7 +35,7 @@ echo "===== JETSON RELEASE ====="
 cat /etc/nv_tegra_release 2>/dev/null || true
 
 echo "===== NVP MODEL ====="
-sudo nvpmodel -q 2>/dev/null || nvpmodel -q 2>/dev/null || true
+sudo -n nvpmodel -q 2>/dev/null || nvpmodel -q 2>/dev/null || true
 
 echo "===== TRTEXEC VERSION ====="
 $TRTEXEC --version || true

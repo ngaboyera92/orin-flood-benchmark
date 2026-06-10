@@ -1,0 +1,74 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v100300] # /usr/src/tensorrt/bin/trtexec --loadEngine=engines/model_student_fp32.engine --warmUp=5000 --duration=120 --avgRuns=10
+[06/10/2026-22:39:55] [I] === Model Options ===
+[06/10/2026-22:39:55] [I] Format: *
+[06/10/2026-22:39:55] [I] Model: 
+[06/10/2026-22:39:55] [I] Output:
+[06/10/2026-22:39:55] [I] 
+[06/10/2026-22:39:55] [I] === System Options ===
+[06/10/2026-22:39:55] [I] Device: 0
+[06/10/2026-22:39:55] [I] DLACore: 
+[06/10/2026-22:39:55] [I] Plugins:
+[06/10/2026-22:39:55] [I] setPluginsToSerialize:
+[06/10/2026-22:39:55] [I] dynamicPlugins:
+[06/10/2026-22:39:55] [I] ignoreParsedPluginLibs: 0
+[06/10/2026-22:39:55] [I] 
+[06/10/2026-22:39:55] [I] === Inference Options ===
+[06/10/2026-22:39:55] [I] Batch: Explicit
+[06/10/2026-22:39:55] [I] Input inference shapes: model
+[06/10/2026-22:39:55] [I] Iterations: 10
+[06/10/2026-22:39:55] [I] Duration: 120s (+ 5000ms warm up)
+[06/10/2026-22:39:55] [I] Sleep time: 0ms
+[06/10/2026-22:39:55] [I] Idle time: 0ms
+[06/10/2026-22:39:55] [I] Inference Streams: 1
+[06/10/2026-22:39:55] [I] ExposeDMA: Disabled
+[06/10/2026-22:39:55] [I] Data transfers: Enabled
+[06/10/2026-22:39:55] [I] Spin-wait: Disabled
+[06/10/2026-22:39:55] [I] Multithreading: Disabled
+[06/10/2026-22:39:55] [I] CUDA Graph: Disabled
+[06/10/2026-22:39:55] [I] Separate profiling: Disabled
+[06/10/2026-22:39:55] [I] Time Deserialize: Disabled
+[06/10/2026-22:39:55] [I] Time Refit: Disabled
+[06/10/2026-22:39:55] [I] NVTX verbosity: 0
+[06/10/2026-22:39:55] [I] Persistent Cache Ratio: 0
+[06/10/2026-22:39:55] [I] Optimization Profile Index: 0
+[06/10/2026-22:39:55] [I] Weight Streaming Budget: 100.000000%
+[06/10/2026-22:39:55] [I] Inputs:
+[06/10/2026-22:39:55] [I] Debug Tensor Save Destinations:
+[06/10/2026-22:39:55] [I] === Reporting Options ===
+[06/10/2026-22:39:55] [I] Verbose: Disabled
+[06/10/2026-22:39:55] [I] Averages: 10 inferences
+[06/10/2026-22:39:55] [I] Percentiles: 90,95,99
+[06/10/2026-22:39:55] [I] Dump refittable layers:Disabled
+[06/10/2026-22:39:55] [I] Dump output: Disabled
+[06/10/2026-22:39:55] [I] Profile: Disabled
+[06/10/2026-22:39:55] [I] Export timing to JSON file: 
+[06/10/2026-22:39:55] [I] Export output to JSON file: 
+[06/10/2026-22:39:55] [I] Export profile to JSON file: 
+[06/10/2026-22:39:55] [I] 
+[06/10/2026-22:39:55] [I] === Device Information ===
+[06/10/2026-22:39:55] [I] Available Devices: 
+[06/10/2026-22:39:55] [I]   Device 0: "Orin" UUID: GPU-643ca45e-8099-5e7a-9e17-a340e09113ad
+[06/10/2026-22:39:55] [I] Selected Device: Orin
+[06/10/2026-22:39:55] [I] Selected Device ID: 0
+[06/10/2026-22:39:55] [I] Selected Device UUID: GPU-643ca45e-8099-5e7a-9e17-a340e09113ad
+[06/10/2026-22:39:55] [I] Compute Capability: 8.7
+[06/10/2026-22:39:55] [I] SMs: 8
+[06/10/2026-22:39:55] [I] Device Global Memory: 7619 MiB
+[06/10/2026-22:39:55] [I] Shared Memory per SM: 164 KiB
+[06/10/2026-22:39:55] [I] Memory Bus Width: 128 bits (ECC disabled)
+[06/10/2026-22:39:55] [I] Application Compute Clock Rate: 1.02 GHz
+[06/10/2026-22:39:55] [I] Application Memory Clock Rate: 0.918 GHz
+[06/10/2026-22:39:55] [I] 
+[06/10/2026-22:39:55] [I] Note: The application clock rates do not reflect the actual clock rates that the GPU is currently running at.
+[06/10/2026-22:39:55] [I] 
+[06/10/2026-22:39:55] [I] TensorRT version: 10.3.0
+[06/10/2026-22:39:55] [I] Loading standard plugins
+[06/10/2026-22:39:55] [I] [TRT] Loaded engine size: 3 MiB
+[06/10/2026-22:39:55] [I] Engine deserialized in 0.0557565 sec.
+[06/10/2026-22:39:55] [I] [TRT] [MemUsageChange] TensorRT-managed allocation in IExecutionContext creation: CPU +0, GPU +63, now: CPU 0, GPU 66 (MiB)
+[06/10/2026-22:39:55] [I] Setting persistentCacheLimit to 0 bytes.
+[06/10/2026-22:39:55] [I] Created execution context with device memory size: 63 MiB
+[06/10/2026-22:39:55] [I] Using random values for input input
+[06/10/2026-22:39:55] [I] Input binding for input with dimensions 1x2x512x512 is created.
+[06/10/2026-22:39:55] [I] Output binding for output with dimensions 1x1x512x512 is created.
+[06/10/2026-22:39:55] [I] Starting inference

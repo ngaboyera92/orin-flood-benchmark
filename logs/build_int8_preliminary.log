@@ -1,0 +1,120 @@
+&&&& RUNNING TensorRT.trtexec [TensorRT v100300] # /usr/src/tensorrt/bin/trtexec --onnx=models/model_student.onnx --saveEngine=engines/model_student_int8_prelim.engine --int8 --fp16 --memPoolSize=workspace:2048
+[06/10/2026-23:11:22] [I] === Model Options ===
+[06/10/2026-23:11:22] [I] Format: ONNX
+[06/10/2026-23:11:22] [I] Model: models/model_student.onnx
+[06/10/2026-23:11:22] [I] Output:
+[06/10/2026-23:11:22] [I] === Build Options ===
+[06/10/2026-23:11:22] [I] Memory Pools: workspace: 2048 MiB, dlaSRAM: default, dlaLocalDRAM: default, dlaGlobalDRAM: default, tacticSharedMem: default
+[06/10/2026-23:11:22] [I] avgTiming: 8
+[06/10/2026-23:11:22] [I] Precision: FP32+FP16+INT8
+[06/10/2026-23:11:22] [I] LayerPrecisions: 
+[06/10/2026-23:11:22] [I] Layer Device Types: 
+[06/10/2026-23:11:22] [I] Calibration: Dynamic
+[06/10/2026-23:11:22] [I] Refit: Disabled
+[06/10/2026-23:11:22] [I] Strip weights: Disabled
+[06/10/2026-23:11:22] [I] Version Compatible: Disabled
+[06/10/2026-23:11:22] [I] ONNX Plugin InstanceNorm: Disabled
+[06/10/2026-23:11:22] [I] TensorRT runtime: full
+[06/10/2026-23:11:22] [I] Lean DLL Path: 
+[06/10/2026-23:11:22] [I] Tempfile Controls: { in_memory: allow, temporary: allow }
+[06/10/2026-23:11:22] [I] Exclude Lean Runtime: Disabled
+[06/10/2026-23:11:22] [I] Sparsity: Disabled
+[06/10/2026-23:11:22] [I] Safe mode: Disabled
+[06/10/2026-23:11:22] [I] Build DLA standalone loadable: Disabled
+[06/10/2026-23:11:22] [I] Allow GPU fallback for DLA: Disabled
+[06/10/2026-23:11:22] [I] DirectIO mode: Disabled
+[06/10/2026-23:11:22] [I] Restricted mode: Disabled
+[06/10/2026-23:11:22] [I] Skip inference: Disabled
+[06/10/2026-23:11:22] [I] Save engine: engines/model_student_int8_prelim.engine
+[06/10/2026-23:11:22] [I] Load engine: 
+[06/10/2026-23:11:22] [I] Profiling verbosity: 0
+[06/10/2026-23:11:22] [I] Tactic sources: Using default tactic sources
+[06/10/2026-23:11:22] [I] timingCacheMode: local
+[06/10/2026-23:11:22] [I] timingCacheFile: 
+[06/10/2026-23:11:22] [I] Enable Compilation Cache: Enabled
+[06/10/2026-23:11:22] [I] errorOnTimingCacheMiss: Disabled
+[06/10/2026-23:11:22] [I] Preview Features: Use default preview flags.
+[06/10/2026-23:11:22] [I] MaxAuxStreams: -1
+[06/10/2026-23:11:22] [I] BuilderOptimizationLevel: -1
+[06/10/2026-23:11:22] [I] Calibration Profile Index: 0
+[06/10/2026-23:11:22] [I] Weight Streaming: Disabled
+[06/10/2026-23:11:22] [I] Runtime Platform: Same As Build
+[06/10/2026-23:11:22] [I] Debug Tensors: 
+[06/10/2026-23:11:22] [I] Input(s)s format: fp32:CHW
+[06/10/2026-23:11:22] [I] Output(s)s format: fp32:CHW
+[06/10/2026-23:11:22] [I] Input build shapes: model
+[06/10/2026-23:11:22] [I] Input calibration shapes: model
+[06/10/2026-23:11:22] [I] === System Options ===
+[06/10/2026-23:11:22] [I] Device: 0
+[06/10/2026-23:11:22] [I] DLACore: 
+[06/10/2026-23:11:22] [I] Plugins:
+[06/10/2026-23:11:22] [I] setPluginsToSerialize:
+[06/10/2026-23:11:22] [I] dynamicPlugins:
+[06/10/2026-23:11:22] [I] ignoreParsedPluginLibs: 0
+[06/10/2026-23:11:22] [I] 
+[06/10/2026-23:11:22] [I] === Inference Options ===
+[06/10/2026-23:11:22] [I] Batch: Explicit
+[06/10/2026-23:11:22] [I] Input inference shapes: model
+[06/10/2026-23:11:22] [I] Iterations: 10
+[06/10/2026-23:11:22] [I] Duration: 3s (+ 200ms warm up)
+[06/10/2026-23:11:22] [I] Sleep time: 0ms
+[06/10/2026-23:11:22] [I] Idle time: 0ms
+[06/10/2026-23:11:22] [I] Inference Streams: 1
+[06/10/2026-23:11:22] [I] ExposeDMA: Disabled
+[06/10/2026-23:11:22] [I] Data transfers: Enabled
+[06/10/2026-23:11:22] [I] Spin-wait: Disabled
+[06/10/2026-23:11:22] [I] Multithreading: Disabled
+[06/10/2026-23:11:22] [I] CUDA Graph: Disabled
+[06/10/2026-23:11:22] [I] Separate profiling: Disabled
+[06/10/2026-23:11:22] [I] Time Deserialize: Disabled
+[06/10/2026-23:11:22] [I] Time Refit: Disabled
+[06/10/2026-23:11:22] [I] NVTX verbosity: 0
+[06/10/2026-23:11:22] [I] Persistent Cache Ratio: 0
+[06/10/2026-23:11:22] [I] Optimization Profile Index: 0
+[06/10/2026-23:11:22] [I] Weight Streaming Budget: 100.000000%
+[06/10/2026-23:11:22] [I] Inputs:
+[06/10/2026-23:11:22] [I] Debug Tensor Save Destinations:
+[06/10/2026-23:11:22] [I] === Reporting Options ===
+[06/10/2026-23:11:22] [I] Verbose: Disabled
+[06/10/2026-23:11:22] [I] Averages: 10 inferences
+[06/10/2026-23:11:22] [I] Percentiles: 90,95,99
+[06/10/2026-23:11:22] [I] Dump refittable layers:Disabled
+[06/10/2026-23:11:22] [I] Dump output: Disabled
+[06/10/2026-23:11:22] [I] Profile: Disabled
+[06/10/2026-23:11:22] [I] Export timing to JSON file: 
+[06/10/2026-23:11:22] [I] Export output to JSON file: 
+[06/10/2026-23:11:22] [I] Export profile to JSON file: 
+[06/10/2026-23:11:22] [I] 
+[06/10/2026-23:11:22] [I] === Device Information ===
+[06/10/2026-23:11:22] [I] Available Devices: 
+[06/10/2026-23:11:22] [I]   Device 0: "Orin" UUID: GPU-643ca45e-8099-5e7a-9e17-a340e09113ad
+[06/10/2026-23:11:22] [I] Selected Device: Orin
+[06/10/2026-23:11:22] [I] Selected Device ID: 0
+[06/10/2026-23:11:22] [I] Selected Device UUID: GPU-643ca45e-8099-5e7a-9e17-a340e09113ad
+[06/10/2026-23:11:22] [I] Compute Capability: 8.7
+[06/10/2026-23:11:22] [I] SMs: 8
+[06/10/2026-23:11:22] [I] Device Global Memory: 7619 MiB
+[06/10/2026-23:11:22] [I] Shared Memory per SM: 164 KiB
+[06/10/2026-23:11:22] [I] Memory Bus Width: 128 bits (ECC disabled)
+[06/10/2026-23:11:22] [I] Application Compute Clock Rate: 1.02 GHz
+[06/10/2026-23:11:22] [I] Application Memory Clock Rate: 0.918 GHz
+[06/10/2026-23:11:22] [I] 
+[06/10/2026-23:11:22] [I] Note: The application clock rates do not reflect the actual clock rates that the GPU is currently running at.
+[06/10/2026-23:11:22] [I] 
+[06/10/2026-23:11:22] [I] TensorRT version: 10.3.0
+[06/10/2026-23:11:22] [I] Loading standard plugins
+[06/10/2026-23:11:22] [I] [TRT] [MemUsageChange] Init CUDA: CPU +2, GPU +0, now: CPU 31, GPU 2778 (MiB)
+[06/10/2026-23:11:25] [I] [TRT] [MemUsageChange] Init builder kernel library: CPU +928, GPU +739, now: CPU 1002, GPU 3564 (MiB)
+[06/10/2026-23:11:25] [I] Start parsing network model.
+[06/10/2026-23:11:25] [I] [TRT] ----------------------------------------------------------------
+[06/10/2026-23:11:25] [I] [TRT] Input filename:   models/model_student.onnx
+[06/10/2026-23:11:25] [I] [TRT] ONNX IR version:  0.0.6
+[06/10/2026-23:11:25] [I] [TRT] Opset version:    11
+[06/10/2026-23:11:25] [I] [TRT] Producer name:    pytorch
+[06/10/2026-23:11:25] [I] [TRT] Producer version: 2.2.2
+[06/10/2026-23:11:25] [I] [TRT] Domain:           
+[06/10/2026-23:11:25] [I] [TRT] Model version:    0
+[06/10/2026-23:11:25] [I] [TRT] Doc string:       
+[06/10/2026-23:11:25] [I] [TRT] ----------------------------------------------------------------
+[06/10/2026-23:11:25] [I] Finished parsing network model. Parse time: 0.0407585
+[06/10/2026-23:11:25] [I] [TRT] Local timing cache in use. Profiling results in this builder pass will not be stored.

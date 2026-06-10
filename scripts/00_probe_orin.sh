@@ -32,7 +32,7 @@ echo "===== CUDA ====="
 nvcc --version || true
 
 echo "===== NVP MODEL ====="
-sudo nvpmodel -q || nvpmodel -q || true
+sudo -n nvpmodel -q || nvpmodel -q || true
 
 echo "===== POWER SENSORS ====="
 find /sys -name "in_power*_input" 2>/dev/null || true
