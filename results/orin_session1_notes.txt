@@ -24,3 +24,9 @@ Completed benchmarks:
 
 FP32 120s at 25W hung after starting inference, so FP32 was measured using shorter protected runs.
 INT8 build was attempted preliminarily but not used as a final result in this session.
+
+Additional preliminary INT8 result:
+An INT8 TensorRT engine was built under 7W mode using --int8 --fp16 and --skipInference.
+TensorRT warned that no calibrator was used, so this result is treated only as a preliminary INT8 compatibility/performance observation.
+The engine was benchmarked at 7W for 20 seconds and achieved 56.5452 FPS with mean latency 17.982 ms.
+This INT8 result should not be reported as final calibrated INT8 accuracy/performance.

@@ -5,3 +5,4 @@ Jetson Orin Nano Super,15W,FP16,120,120.843,8.51269,8.54102,8.27047,0.168426,0.0
 Jetson Orin Nano Super,15W,FP32,20,61.255,16.5541,16.6084,16.3078,0.167636,0.0786717,short protected run
 Jetson Orin Nano Super,7W,FP16,120,45.9413,22.089,22.127,21.7583,0.2256,0.10519,main 120s run
 Jetson Orin Nano Super,7W,FP32,20,22.7535,44.1934,44.2393,43.8486,0.240728,0.104093,short protected run
+Jetson Orin Nano Super,7W,INT8_prelim,20,56.5452,17.982,18.0105,17.664,0.213405,0.104664,preliminary INT8 built at 7W without calibrator; not final calibrated INT8
