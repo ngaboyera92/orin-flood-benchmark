@@ -30,3 +30,12 @@ An INT8 TensorRT engine was built under 7W mode using --int8 --fp16 and --skipIn
 TensorRT warned that no calibrator was used, so this result is treated only as a preliminary INT8 compatibility/performance observation.
 The engine was benchmarked at 7W for 20 seconds and achieved 56.5452 FPS with mean latency 17.982 ms.
 This INT8 result should not be reported as final calibrated INT8 accuracy/performance.
+
+Final preliminary INT8 cross-power test:
+A new INT8 TensorRT engine was built under 25W mode and then benchmarked using the same engine at 25W, 15W, and 7W.
+The 25W-built INT8 engine achieved:
+25W: 220.519 FPS, mean latency 4.72118 ms
+15W: 147.272 FPS, mean latency 7.05007 ms
+7W: 54.3475 FPS, mean latency 18.698 ms
+
+Because TensorRT reported that no calibrator was used, these INT8 results are treated as preliminary performance/compatibility results, not final calibrated INT8 results.
