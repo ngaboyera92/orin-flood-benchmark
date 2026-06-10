@@ -1,0 +1,26 @@
+Session 1 Orin Nano remote benchmark.
+
+Board identified by probe:
+NVIDIA Jetson Orin Nano Engineering Reference Developer Kit Super
+
+Jetson Linux:
+R36.4.7
+
+TensorRT:
+10.3.0
+
+User access:
+Web SSH terminal inside restricted container.
+sudo/nvpmodel not available to user.
+Power modes were changed/confirmed by AiProff admin.
+
+Completed benchmarks:
+25W FP16 120s
+25W FP32 20s protected run
+15W FP16 120s
+15W FP32 20s protected run
+7W FP16 120s
+7W FP32 20s protected run
+
+FP32 120s at 25W hung after starting inference, so FP32 was measured using shorter protected runs.
+INT8 build was attempted preliminarily but not used as a final result in this session.

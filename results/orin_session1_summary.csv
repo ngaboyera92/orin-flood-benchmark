@@ -1,0 +1,7 @@
+platform,power_mode,precision,run_duration_s,throughput_fps,mean_latency_ms,p99_latency_ms,gpu_compute_mean_ms,h2d_mean_ms,d2h_mean_ms,notes
+Jetson Orin Nano Super,25W,FP16,120,180.983,5.69506,5.71875,5.52245,0.121573,0.0510558,main 120s run
+Jetson Orin Nano Super,25W,FP32,20,91.4598,11.1021,11.1453,10.9249,0.122724,0.0544076,short protected run after 120s FP32 hang
+Jetson Orin Nano Super,15W,FP16,120,120.843,8.51269,8.54102,8.27047,0.168426,0.074118,main 120s run
+Jetson Orin Nano Super,15W,FP32,20,61.255,16.5541,16.6084,16.3078,0.167636,0.0786717,short protected run
+Jetson Orin Nano Super,7W,FP16,120,45.9413,22.089,22.127,21.7583,0.2256,0.10519,main 120s run
+Jetson Orin Nano Super,7W,FP32,20,22.7535,44.1934,44.2393,43.8486,0.240728,0.104093,short protected run
